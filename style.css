@@ -1,0 +1,101 @@
+*{
+    padding: 5px;
+    margin: 0;
+    color: #E8D7F1;
+}
+
+html{
+    background-color: #0E273C;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 15px;
+}
+
+.header{
+    background-color: #4A306D;
+    border-radius: 15px;
+    padding: 10px 28px;
+    grid-column: 1/6;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.logo{
+    height: 80px;
+    width: auto;
+    cursor: pointer;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #E8D7F1;
+    font-size: 18px;
+    padding: 10px 28px;
+    background-color: #5a3c83;
+    border-radius: 30px;
+    flex-wrap: nowrap;
+    transition: 0.4s;
+}
+
+.nav-links a:hover{
+    background-color: #30194e;
+    padding: 15px 28px;
+}
+
+.banner{
+    background-color:#4A306D;
+    border-radius: 15px;
+    padding: 10px 28px;
+    grid-column: 1/6;
+    grid-row: 2/4;
+    animation:animate 16s ease-in-out infinite ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+}
+
+@keyframes animate{
+    0%,100%{
+        background-image: url(media/delorean-80s-4k-8j.jpg);
+    }
+    25%{
+        background-image: url(media/delorean-from-future-4k-ha.jpg);
+    }
+    50%{
+        background-image: url(media/synthwave-purple-city-ec.jpg);
+    }
+    75%{
+        background-image: url(media/wallpapersden.com_purple-city_2560x1600.jpg);
+    }
+}
+
+.aside{
+    background-color: #4A306D;
+    border-radius: 15px;
+    padding: 10px 28px;
+    grid-column: 1/3;
+    grid-row: 4/8;
+}
+
+.main{
+    background-color: #4A306D;
+    border-radius: 15px;
+    padding: 10px 28px;
+    grid-column: 3/6;
+    grid-row: 4/8;
+}
+
+.footer{
+    background-color: #4A306D;
+    border-radius: 15px;
+    padding: 10px 28px;
+    grid-column: 1/6;
+    grid-row: 8/11;
+}
